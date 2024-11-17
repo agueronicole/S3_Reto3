@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tienda Muebles</h1>
+        <nav>
+            <ul>
+                <li><a href="#index.html">Inicio</a></li>
+                <li><a href="#nosotros.html">Nosotros</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Contacto</h2>
+
+            <div class="form-group-tus-datos">
+                <fieldset>
+                    <legend>TUS DATOS</legend>
+                    <div class="form-group">
+                        <label class="labelHeader" for="inputNombre">Nombre</label>
+                        <input id="inputNombre" placeholder="Tu Nombre" type="text" required minlength="10"
+                            maxlength="18" />
+                    </div>
+
+                    <div class="form-group">
+                        <label class="labelHeader" for="inputNombre"> Asunto</label>
+                        <input id="inputNombre" placeholder="Tu Asunto" type="text" required minlength="10"
+                            maxlength="18" />
+                    </div>
+
+                    <div class="form-group">
+                        <label class="labelHeader" for="inputEmail">E-mail</label>
+                        <input id="inputEmail" placeholder="Tu Email" type="email" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label class="labelHeader" for="inputTelefono">Teléfono</label>
+                        <input id="inputTelefono" placeholder="Tu Teléfono" type="tel" min="0" max="99" />
+                    </div>
+
+                    <div class="form-group">
+                        <label class="labelHeader" for="inputNombre"> Mensaje</label>
+                        <input id="inputMensaje" type="text" required minlength="100" maxlength="180" />
+                    </div>
+
+                </fieldset>
+
+            </div>
+
+            <div class="form-group-pais">
+                <fieldset>
+                    <legend>PAÍS</legend>
+
+                    <label for="País">País</label>
+
+                    <select id="País" name="País" class="form-control">
+                        <option value="México">Mexico</option>
+                        <option value="Perú">Perú</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="España">España</option>
+                        <option value="Chile">Chile</option>
+                    </select>
+                </fieldset>
+            </div>
+
+            <div class="form-group-info-extra">
+                <fieldset>
+                    <legend>INFORMACIÓN EXTRA</legend>
+                    <div class="form-group">
+                        <label class="labelInfo"></label>
+
+                        <label for="inputCliente">
+                            Cliente
+                            <input name="info-extra" type="radio" id="inputCliente" value="cliente" />
+                        </label>
+
+                        <label for="inputProveedor">
+                            Proveedor
+                            <input name="info-extra" type="radio" id="inputProveedor" value="proveedor" />
+                        </label>
+
+                        <label for="categoria">Categoría de Interés</label>
+                        <input list="categorias" name="categorias">
+                        <datalist id="categorias">
+                            <option value="Cocina"></option>
+                            <option value="Exterior"></option>
+                            <option value="Recamaras"></option>
+                            <option value="Oficina"></option>
+                            <option value="Televisión"></option>
+                        </datalist>
+                    </div>
+                </fieldset>
+
+            </div>
+
+            <button class="button">ENVIAR FORMULARIO</button>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h2> Categorías</h2>
+            <ul>
+                <li>Cocina</li>
+                <li>Oficina</li>
+                <li>Jardín</li>
+                <li>Cochera</li>
+                <li>Dornmitorio</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Sobre Nosotros</h2>
+            <ul>
+                <li>Nuestra historia</li>
+                <li>Misión,visión y Valores</li>
+                <li>Carreras</li>
+                <li>Política de Privacidad</li>
+                <li>Términos del Servicio</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Soporte</h2>
+            <ul>
+                <li>Preguntas frecuentes</li>
+                <li>Ayuda en línea</li>
+                <li>Confianza y Seguridad</li>
+            </ul>
+        </div>
+
+        <p>Todos los derechos Reservados, TiendaMuebles</p>
+
+    </footer>
+
+</body>
+
+</html>
