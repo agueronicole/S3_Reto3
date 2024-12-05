@@ -5,15 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfairisplay:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet" />
 </head>
 
 <body>
     <header>
-        <h1>Tienda Muebles</h1>
-        <nav>
-            <ul>
-                <li><a href="#index.html">Inicio</a></li>
-                <li><a href="#nosotros.html">Nosotros</a></li>
+        <h1>Tienda <span>Muebles</span></h1>
+        <nav class="contenedorNavegacion">
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="tienda.html">Tienda</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
@@ -24,7 +28,7 @@
 
     <section class="Galeria">
         <h2>Galería</h2>
-        <div>
+        <div class="galeria">
 
             <div>
                 <img src="./assets/assets/img/galeria_01.jpg">
@@ -57,38 +61,41 @@
     </section>
 
     <footer>
-        <div>
-            <h2> Categorías</h2>
-            <ul>
-                <li>Cocina</li>
-                <li>Oficina</li>
-                <li>Jardín</li>
-                <li>Cochera</li>
-                <li>Dornmitorio</li>
-            </ul>
+        <div class="cat">
+            <div>
+                <h2> Categorías</h2>
+                <ul>
+                    <li>Cocina</li>
+                    <li>Oficina</li>
+                    <li>Jardín</li>
+                    <li>Cochera</li>
+                    <li>Dornmitorio</li>
+                </ul>
+            </div>
+    
+            <div>
+                <h2>Sobre Nosotros</h2>
+                <ul>
+                    <li>Nuestra historia</li>
+                    <li>Misión,visión y Valores</li>
+                    <li>Carreras</li>
+                    <li>Política de Privacidad</li>
+                    <li>Términos del Servicio</li>
+                </ul>
+            </div>
+    
+            <div>
+                <h2>Soporte</h2>
+                <ul>
+                    <li>Preguntas frecuentes</li>
+                    <li>Ayuda en línea</li>
+                    <li>Confianza y Seguridad</li>
+                </ul>
+            </div>
         </div>
 
-        <div>
-            <h2>Sobre Nosotros</h2>
-            <ul>
-                <li>Nuestra historia</li>
-                <li>Misión,visión y Valores</li>
-                <li>Carreras</li>
-                <li>Política de Privacidad</li>
-                <li>Términos del Servicio</li>
-            </ul>
-        </div>
 
-        <div>
-            <h2>Soporte</h2>
-            <ul>
-                <li>Preguntas frecuentes</li>
-                <li>Ayuda en línea</li>
-                <li>Confianza y Seguridad</li>
-            </ul>
-        </div>
-
-        <p>Todos los derechos Reservados, TiendaMuebles</p>
+        <p class="derechos">Todos los derechos Reservados, TiendaMuebles</p>
 
     </footer>
 

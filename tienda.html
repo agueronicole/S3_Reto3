@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfairisplay:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet" />
 </head>
 <body>
     <header>
-        <h1>Tienda Muebles</h1>
-        <nav>
-            <ul>
-                <li><a href="#index.html">Inicio</a></li>
-                <li><a href="#nosotros.html">Nosotros</a></li>
+        <h1>Tienda <span>Muebles</span></h1>
+        <nav class="contenedorNavegacion">
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="tienda.html">Tienda</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
@@ -20,80 +24,113 @@
         </nav>
     </header>
 
-    <section class="Productos">
+    <section class="productos">
         <h2>Nuestros Productos</h2>
-        <div>
+        <div class="listadoProductos">
 
-            <article>
-                <img src="./assets/assets/img/producto1.jpg">
-                <div>
-                    <h3>Producto 1</h3>
-                    <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec
-                        mauris.</p>
-                    <h3 class="numeros">$1,000,000.00</h3>
-                    <button class="button">AGREGAR AL CARRITO</button>
+            <article class="producto1">
+
+                <div class="img_wrapper">
+                    <img src="./assets/assets/img/producto1.jpg">
                 </div>
-            </article>
 
-            <article>
-                <img src="./assets/assets/img/producto2.jpg">
-                <div>
-                    <h3>Prodcuto 2</h3>
-                    <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec
+                <div class="content">
+                    <h4 class="tituloProducto">Producto 1</h4>
+                    <p class="contentText">
+                        Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec
                         mauris.
                     </p>
                     <h3 class="numeros">$1,000,000.00</h3>
                     <button class="button">AGREGAR AL CARRITO</button>
+
                 </div>
             </article>
 
-            <article>
-                <img src="./assets/assets/img/producto3.jpg">
-                <div>
-                    <h3>Prodcuto 3</h3>
-                    <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec
-                        mauris.
-                    </p>
-                    <h3 class="numeros">$1,000,000.00</h3>
-                    <button class="button">AGREGAR AL CARRITO</button>
-                </div>
-            </article>
+            <div class="container2">
+                <article class="producto2">
 
-            <article>
-                <img src="./assets/assets/img/producto4.jpg">
-                <div>
-                    <h3>Prodcuto 4</h3>
-                    <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec
-                        mauris.
-                    </p>
-                    <h3 class="numeros">$1,000,000.00</h3>
-                    <button class="button">AGREGAR AL CARRITO</button>
-                </div>
-            </article>
+                    <div class="imgProducto2">
+                        <img src="./assets/assets/img/producto2.jpg">
+                    </div>
+                    
+                    <div class="content2">
+                        <h4 class="tituloProducto2">Producto 2</h4>
+                        <p class="contentText2">
+                            Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec
+                            mauris.
+                        </p>
+                        <h3 class="numeros">$1,000,000.00</h3>
+                        <button class="button">AGREGAR AL CARRITO</button>
+                    </div>
+                </article>
 
-            <article>
-                <img src="./assets/assets/img/producto5.jpg">
-                <div>
-                    <h3>Prodcuto 5</h3>
-                    <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec
-                        mauris.
-                    </p>
-                    <h3 class="numeros">$1,000,000.00</h3>
-                    <button class="button">AGREGAR AL CARRITO</button>
-                </div>
-            </article>
+                <article class="producto2">
+                    <div class="imgProducto2">
+                        <img src="./assets/assets/img/producto3.jpg">
+                    </div>
+        
+                    <div class="content2">
+                        <h4 class="tituloProducto2">Producto 3</h4>
+                        <p class="contentText2">
+                            Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec
+                            mauris.
+                        </p>
+                        <h3 class="numeros">$1,000,000.00</h3>
+                        <button class="button">AGREGAR AL CARRITO</button>
+                    </div>
+                </article>
+            </div>
 
-            <article>
-                <img src="./assets/assets/img/producto6.jpg">
-                <div>
-                    <h3>Producto 6</h3>
-                    <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec
-                        mauris.
-                    </p>
-                    <h3 class="numeros">$1,000,000.00</h3>
-                    <button class="button">AGREGAR AL CARRITO</button>
-                </div>
-            </article>
+            <div class="container3">
+                <article class="producto3">
+                    <div class="imgProducto3">
+                        <img src="./assets/assets/img/producto4.jpg">
+                    </div>
+        
+                    <div class="content3">
+                        <h4 class="tituloProducto3">Producto 4</h4>
+                        <p class="contentText3">
+                            Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec
+                            mauris.
+                        </p>
+                        <h3 class="numeros">$1,000,000.00</h3>
+                        <button class="button">AGREGAR AL CARRITO</button>
+                    </div>
+                </article>
+
+                <article class="producto3">
+                    <div class="imgProducto3">
+                        <img src="./assets/assets/img/producto5.jpg">
+                    </div>
+
+                    <div class="content3">
+                        <h4 class="tituloProducto3">Producto 5</h4>
+                        <p class="contentText3">
+                            Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec
+                            mauris.
+                        </p>
+                        <h3 class="numeros">$1,000,000.00</h3>
+                        <button class="button">AGREGAR AL CARRITO</button>
+                    </div>
+                </article>
+
+                <article class="producto3">
+                    <div class="imgProducto3">
+                        <img src="./assets/assets/img/producto6.jpg">
+                    </div>
+                    
+                    <div class="content3">
+                        <h4 class="tituloProducto3">Producto 6</h4>
+                        <p class="contentText3">
+                            Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec
+                            mauris.
+                        </p>
+                        <h3 class="numeros">$1,000,000.00</h3>
+                        <button class="button">AGREGAR AL CARRITO</button>
+                    </div>
+                </article>
+
+            </div>
         </div>
 
     </section>
@@ -101,40 +138,42 @@
 </main>
 
 <footer>
-    <div>
-        <h2> Categorías</h2>
-        <ul>
-            <li>Cocina</li>
-            <li>Oficina</li>
-            <li>Jardín</li>
-            <li>Cochera</li>
-            <li>Dornmitorio</li>
-        </ul>
+    <div class="cat">
+        <div>
+            <h2> Categorías</h2>
+            <ul>
+                <li>Cocina</li>
+                <li>Oficina</li>
+                <li>Jardín</li>
+                <li>Cochera</li>
+                <li>Dornmitorio</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Sobre Nosotros</h2>
+            <ul>
+                <li>Nuestra historia</li>
+                <li>Misión,visión y Valores</li>
+                <li>Carreras</li>
+                <li>Política de Privacidad</li>
+                <li>Términos del Servicio</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Soporte</h2>
+            <ul>
+                <li>Preguntas frecuentes</li>
+                <li>Ayuda en línea</li>
+                <li>Confianza y Seguridad</li>
+            </ul>
+        </div>
     </div>
 
-    <div>
-        <h2>Sobre Nosotros</h2>
-        <ul>
-            <li>Nuestra historia</li>
-            <li>Misión,visión y Valores</li>
-            <li>Carreras</li>
-            <li>Política de Privacidad</li>
-            <li>Términos del Servicio</li>
-        </ul>
-    </div>
 
-    <div>
-        <h2>Soporte</h2>
-        <ul>
-            <li>Preguntas frecuentes</li>
-            <li>Ayuda en línea</li>
-            <li>Confianza y Seguridad</li>
-        </ul>
-    </div>
-
-    <p>Todos los derechos Reservados, TiendaMuebles</p>
+    <p class="derechos">Todos los derechos Reservados, TiendaMuebles</p>
 
 </footer>
-
 </body>
 </html>
